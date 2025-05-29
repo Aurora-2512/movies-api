@@ -7,8 +7,8 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3000",
-      "description": "Local development server"
+      "url": "https://movies-api-aurora2512.onrender.com",
+      "description": "Render production server"
     }
   ],
   "paths": {
