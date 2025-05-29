@@ -12,18 +12,28 @@
     }
   ],
   "paths": {
-    "/api/movies": {
-      "get": {
-        "summary": "Get all movies",
-        "responses": {
-          "200": {
-            "description": "List of movies",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Movie"
+    "/api/movies/genre/{genre}": {
+  "get": {
+    "summary": "Get movies by genre",
+    "parameters": [
+      {
+        "name": "genre",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "description": "List of movies by genre",
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/Movie"
                   }
                 }
               }
