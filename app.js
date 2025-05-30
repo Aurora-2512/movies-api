@@ -4,7 +4,7 @@ const moviesRouter = require('./movies');
 const app = express();
 const PORT = 3000;
 
-app.use('/', moviesRouter);
+app.use('/api', moviesRouter);
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
