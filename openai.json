@@ -12,7 +12,7 @@
     }
   ],
   "paths": {
-    "/movies/genre/{genre}": {
+    "/api/movies/genre/{genre}": {
   "get": {
     "summary": "Get movies by genre",
     "parameters": [
