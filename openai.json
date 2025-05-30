@@ -12,7 +12,7 @@
     }
   ],
   "paths": {
-    "/api/movies/genre/{genre}": {
+    "/movies/genre/{genre}": {
   "get": {
     "summary": "Get movies by genre",
     "parameters": [
@@ -50,7 +50,7 @@
         "properties": {
           "title": { "type": "string" },
           "genre": { "type": "string" },
-          "year": { "type": "integer" },
+          "year": { "type": "string" },
           "mood": { "type": "string" }
         }
       }
