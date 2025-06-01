@@ -13,5 +13,14 @@
   "dependencies": {
     "csv-parser": "^3.2.0",
     "express": "^5.1.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aurora-2512/movies-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aurora-2512/movies-api/issues"
+  },
+  "homepage": "https://github.com/Aurora-2512/movies-api#readme"
 }
