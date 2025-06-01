@@ -20,9 +20,9 @@ router.get('/movies', (req, res) => {
 
 // Route: Search by genre
 router.get('/movies/genre/:genre', (req, res) => {
-  const genre = req.params.genre.toLowerCase();
+  const genre = req.params.genre.toLowerCase().trim();
   const results = movies.filter(movie =>
-    movie.genre.toLowerCase().includes(genre)
+    movie.genre.toLowerCase().trim().includes(genre)
   );
   if (results.length === 0) {
     return res.status(404).json({ message: 'No movies found for this genre' });
